@@ -1,0 +1,71 @@
+html {
+	min-width:430px;
+}
+
+.ctx {
+	width:auto;
+	padding:0 40px;
+}
+
+#pic {
+	display:none;
+}
+
+#about-us, #solutions {
+	background-image:none;
+}
+
+#about-us, #solutions, #steps {
+	height:auto;
+}
+
+#about-us, #solutions, #resources, #steps {
+	padding:20px 0;
+}
+
+#text {
+	width:auto;
+	margin:0;
+	padding:0;
+}
+
+h1,h2 {
+	margin-top:0!important;
+	text-align:center!important;
+}
+
+#solutions a {
+	height:auto;
+	float:none;
+	margin:20px auto!important;
+}
+
+#ru-solutions {
+	height:auto;
+}
+
+#ru-solutions .ctx {
+	width:auto;
+	height:auto;
+	padding:20px 40px 20px 240px;
+}
+
+#resources a {
+	height:auto;
+	float:none;
+	width:auto!important;
+	padding:12px 32px 16px 32px!important;
+	margin:0 22px 22px 0!important;
+}
+
+#steps ul {
+	margin:40px auto;
+	height:auto;
+	background:none;
+	width: 193px;
+}
+
+#steps ul li {
+    float: none;
+	margin-bottom:30px;
+}

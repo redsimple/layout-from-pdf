@@ -1,0 +1,475 @@
+@font-face {
+    font-family: SegoeUI; 
+    src: url(../fonts/segoeui.ttf);
+}
+
+@font-face {
+    font-family: SegoeUIL; 
+    src: url(../fonts/segoeuil.ttf);
+} 
+
+@font-face {
+    font-family: SegoeUISL; 
+    src: url(../fonts/segoeuisl.ttf);
+} 
+
+@font-face {
+    font-family: SegoeUISB; 
+    src: url(../fonts/seguisb_0.ttf);
+} 
+
+
+body {
+	font-size:18px;
+	font-family: SegoeUI;
+}
+
+h1,h2 {
+	font-size:48px;
+	letter-spacing:-0.01em;
+	font-family: SegoeUIL; 
+}
+
+h2 {
+	margin-top:71px;
+	text-align:center;
+	color:#1c2532;
+}
+
+.ctx {
+	width:965px;
+	margin:0 auto;
+}	
+
+.clr {
+	clear:both;
+}
+
+/**Голова**/
+
+#head {
+	height:22px;
+	padding:23px 0 21px 0;
+	border-bottom:5px solid #eee;
+}
+
+#mic, #vk, #fb {
+	height:22px;
+	width:22px;
+	display:inline-block;
+	background-image:url(../img/top_icons.png);
+	text-indent:-9000px;
+}
+
+#mic {
+	float:left;
+	width:94px;
+	background-position:0 0;
+}
+
+
+/**Кнопки соцсетей**/
+
+#social {
+	float:right;
+	font-size:16px;
+	color:#b1b0b1;
+}
+
+#fb {
+	background-position:-94px 0px;
+	margin:0 9px 0 17px;
+}
+
+#vk {
+	background-position:-118px 0px;
+}
+
+/**О проекте**/
+
+#about-us {
+	height:547px;
+	background:url(../img/leftcloudtop.png) left center no-repeat, url(../img/rightcloudtop.png) right bottom+32px no-repeat #00bbf1;
+	animation: ab 3s linear;
+}
+
+#about-us .ctx {
+	position:relative;
+}
+
+@keyframes ab {
+    0% { background-position:-400px 0,120% 0;}   
+    100% { background-position:left center,right bottom+32px; }
+}
+
+#text {
+	padding-top:124px;
+	width:474px;
+	color:#fff;
+}
+
+#text p {
+	line-height:24px;
+	margin:27px 0 0 4px;
+	font-weight: 500;
+}
+
+/**Картинка**/
+
+#pic {
+	position:absolute;
+	width:482px;
+	height:547px;
+	top:0;
+	right:0;
+	background:url(../img/pic.png) right bottom+32px no-repeat;
+}
+
+#voronk {
+	position:absolute;
+	width:104px;
+	height:92px;
+	bottom:296px;
+	left:109px;
+	background:url(../img/voronk.png) 0 0 no-repeat;
+}
+
+#item {
+	position:absolute;
+	width:23px;
+	height:14px;
+	top:245px;
+	left:149px;
+	opacity: 0;
+	background:url(../img/pic6.png) 0 0 no-repeat;
+	animation: item .8s linear 2s infinite;
+}
+
+@keyframes item {
+      0% {top:245; opacity: 0;}
+	  50% {top:253px;opacity: 1;}
+      100% {top:260px; opacity: 0;}
+}
+
+/**Линии**/
+
+#lines {
+	position:absolute;
+	height:0;
+	width:58px;
+	left:46px;
+	bottom:159px;
+	animation: lines 3s linear 3s infinite;
+	overflow: hidden;
+}
+
+#lines div {
+	position:absolute;
+	bottom:0;
+	width:13px;
+}
+
+#line1 {
+	height:36px;
+	left:0px;
+	background-color:#ef4f23;
+}
+
+#line2 {
+	height:60px;
+	left:16px;
+	background-color:#662e8f;
+}
+
+#line3 {
+	height:36px;
+	left:32px;
+	background-color:#fbed20;
+}
+
+#line4 {
+	width:10px;
+	height:12px;
+	left:48px;
+	background-color:#682079;
+}
+
+@keyframes lines {
+    0% { height:0;}   
+    100% { height:60px; }
+}
+
+/**Падающие объекты**/
+
+#pic #falling div {
+	width:25px;
+	height:25px;
+	position:absolute;
+	top:-30px;
+	animation: pics 2s linear 0s infinite;
+}
+
+#pic #falling #pic1 {
+	background:url(../img/pic1.png) 0 0 no-repeat;
+	left: 50px;
+	animation-delay: .1s;
+}
+
+#pic #falling #pic2 {
+	background:url(../img/pic2.png) 0 0 no-repeat;
+	left: 100px;
+	animation-delay: .5s;
+}
+
+#pic #falling #pic3 {
+	background:url(../img/pic3.png) 0 0 no-repeat;
+	left: 130px;
+	animation-delay: .8s;
+}
+
+#pic #falling #pic4 {
+	background:url(../img/pic4.png) 0 0 no-repeat;
+	left: 160px;
+	animation-delay: 1.3s;
+}
+
+#pic #falling #pic5 {
+	background:url(../img/pic5.png) 0 0 no-repeat;
+	left: 200px;
+	animation-delay: 1.9s;
+}
+
+#pic #falling #pic6 {
+	background:url(../img/pic6.png) 0 0 no-repeat;
+	left: 240px;
+	animation-delay: .9s;
+}
+
+#pic #falling #pic7 {
+	background:url(../img/pic7.png) 0 0 no-repeat;
+	left: 280px;
+	animation-delay: 2.3s;
+}
+
+@keyframes pics {
+      0% {top:0; opacity: 1;}
+	  85% {opacity: 1;}
+      100% {top:200px; opacity: 0; left: 145px;}
+}
+
+/**Решения**/
+
+#solutions{
+	height:784px;
+	background:url(../img/leftcloudmid.png) left top+90px no-repeat, url(../img/rightcloudmid.png) right bottom+91px no-repeat;
+	animation: sol 3s linear;
+}
+
+@keyframes sol {
+    0% { background-position:-400px 105%,120% 105%;}   
+    100% { background-position:left top+90px,right bottom+91px; }
+}
+
+#solutions h2 {
+	margin-bottom:41px;
+}
+
+#solutions a {
+	display:block;
+	width:200px;
+	height:220px;
+	margin:44px 47px 0 0;
+	float:left;
+	font-family: SegoeUISB; 
+	font-size:22px;
+	line-height:24px;
+	color:#1c2532;
+	transition: all .1s linear;
+}
+
+#solutions  #oracle,#solutions  #zend {margin-right:0;} 
+
+#solutions a div {
+	border:2px solid #d7d7d7;
+	height:118px;
+	margin-bottom:18px;
+	transition: all .1s linear;
+}
+
+#solutions a:hover {
+	color:#7bb63c;
+}
+
+#solutions a:hover div {
+	border-color:#7bb63c;
+}
+
+/**Картинки партнеров**/
+
+#solutions #wowza div{
+	background:url(../img/wowzabw.png) 50% 50% no-repeat;
+}
+#solutions #wowza:hover div{
+	background-image:url(../img/wowza.png);
+}
+
+#solutions #kasp div{
+	background:url(../img/kaspbw.png) 50% 50% no-repeat;
+}
+#solutions #kasp:hover div{
+	background-image:url(../img/kasp.png);
+}
+
+#solutions #barra div{
+	background:url(../img/barrabw.png) 50% 50% no-repeat;
+}
+#solutions #barra:hover div{
+	background-image:url(../img/barra.png);
+}
+
+#solutions #oracle div{
+	background:url(../img/oraclebw.png) 50% 50% no-repeat;
+}
+#solutions #oracle:hover div{
+	background-image:url(../img/oracle.png);
+}
+
+#solutions #core div{
+	background:url(../img/corebw.png) 50% 50% no-repeat;
+}
+#solutions #core:hover div{
+	background-image:url(../img/core.png);
+}
+
+#solutions #os div{
+	background:url(../img/osbw.png) 50% 50% no-repeat;
+}
+#solutions #os:hover div{
+	background-image:url(../img/os.png);
+}
+
+#solutions #datameer div{
+	background:url(../img/datameerbw.png) 50% 50% no-repeat;
+}
+#solutions #datameer:hover div{
+	background-image:url(../img/datameer.png);
+}
+
+#solutions #zend div{
+	background:url(../img/zendbw.png) 50% 50% no-repeat;
+}
+#solutions #zend:hover div{
+	background-image:url(../img/zend.png);
+}
+
+/**Синяя подложка с картой**/
+
+#ru-solutions {
+	height:168px;
+	background-color:#0078d7;
+	font-family: SegoeUISB; 
+	line-height:24px;
+	color:#fff;
+}
+
+#ru-solutions .ctx {
+	background:url(../img/map.png) 22px 50% no-repeat;
+	width:700px;
+	height:105px;
+	padding:63px 22px 0 240px;
+}
+
+#ru-solutions a {
+	color:#c5d533;
+}
+
+/**Полезные ресурсы**/
+
+#resources h2 {
+	margin:60px 0 45px 0;
+	text-align:left;
+}
+
+#resources a {
+	display:block;
+	height:48px;
+	border:2px solid #0078d7;
+	margin:0 22px 22px 0;
+	padding:12px 32px 16px 32px;
+	float:left;
+	font-family: SegoeUISB; 
+	line-height:24px;
+	color:#0078d7;
+	transition: all .1s linear;
+}
+
+#resources a:hover {
+	border-color:#7bb63c;
+	background-color:#7bb63c;
+	color:#fff;
+}
+
+#resources div.ctx a:nth-child(2) {
+	width:480px;
+	padding-right:70px;
+}
+
+#resources div.ctx a:nth-child(3) {
+	width:253px;
+	padding-right:60px;
+	margin-right:0;
+}
+
+#resources div.ctx a:nth-child(4) {
+	width:267px;
+}
+
+#resources div.ctx a:nth-child(5) {
+	width:294px;
+}
+
+#resources div.ctx a:nth-child(6) {
+	width:140px;
+	margin-right:0;
+}
+
+/**Как приобрести**/
+
+#steps {
+	height:400px;
+}
+
+#steps ul {
+	background:url(../img/line.png) 0 40px repeat-x;
+	height:146px;
+	margin-top:82px;
+}
+
+#steps ul li {
+    float: left;
+    width: 193px;
+    padding-top: 102px;
+    text-align: center;
+}
+
+/**Картинки с цифрами**/
+
+#steps ul li:nth-child(1) {
+	background:url(../img/1.png) left top no-repeat;
+}
+
+#steps ul li:nth-child(2) {
+	background:url(../img/2.png) 50% 0 no-repeat;
+}
+
+#steps ul li:nth-child(3) {
+	background:url(../img/3.png) 50% 0 no-repeat;
+}
+
+#steps ul li:nth-child(4) {
+	background:url(../img/4.png) 50% 0 no-repeat;
+}
+
+#steps ul li:nth-child(5) {
+	background:url(../img/5.png) right top no-repeat;
+}
